@@ -90,7 +90,8 @@ export default {
     async addWindow() {
       let newWindow = {
         name: this.window_name,
-        room: this.window_room,
+        roomId: this.window_room.id,
+        roomName: this.window_room.name,
         windowStatus: this.window_status,
       };
       let headers = {

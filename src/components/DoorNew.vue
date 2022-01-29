@@ -90,7 +90,8 @@ export default {
     async addDoor() {
       let newDoor = {
         name: this.door_name,
-        room: this.door_room,
+        roomId: this.door_room.id,
+        roomName: this.door_room.name,
         doorStatus: this.door_status,
       };
       let headers = {
